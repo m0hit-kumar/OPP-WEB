@@ -4,14 +4,25 @@ import { Route, Routes } from "react-router-dom";
 
 import LoginPage from "./LoginPage";
 import Homepage from "./Homepage";
-
+import Navbar from "./Navbar";
 const App = () => {
   return (
     <>
-      <Routes>
-        <Route exact path="/" component={LoginPage}></Route>
-        <Route path="/homepage" component={Homepage}></Route>
-      </Routes>
+      <div className="flex">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<LoginPage />}></Route>
+          <Route exact path="/homepage" element={<Homepage />}></Route>
+          <Route exact path="/Dashboard" element={<Homepage />}></Route>
+          <Route exact path="/Inbox" element={<Homepage />}></Route>
+          <Route exact path="/Accounts" element={<Homepage />}></Route>
+          <Route exact path="/Schedule" element={<Homepage />}></Route>
+          <Route exact path="/Search" element={<Homepage />}></Route>
+          <Route exact path="/Analytics" element={<Homepage />}></Route>
+          <Route exact path="/Files" element={<Homepage />}></Route>
+          <Route exact path="/Setting" element={<LoginPage />}></Route>
+        </Routes>
+      </div>
     </>
   );
 };

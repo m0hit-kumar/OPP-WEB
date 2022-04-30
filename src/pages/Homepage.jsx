@@ -1,7 +1,7 @@
-import React from "react";
 import "../CSS/Homepage.css";
+// import Images from "../js/assets.js";
 
 const Homepage = () => {
-  return <h1>this is homepage</h1>;
+  return <div className="flex">Homepage</div>;
 };
 export default Homepage;
