@@ -1,5 +1,5 @@
 import { React, useState } from "react";
-import "../CSS/Homepage.css";
+import "../CSS/Navbar.css";
 import Images from "../js/assets.js";
 import { NavLink } from "react-router-dom";
 const Navbar = () => {
