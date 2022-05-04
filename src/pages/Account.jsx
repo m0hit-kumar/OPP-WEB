@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "../CSS/Account.css";
 import Images from "../js/assets.js";
 function Account() {

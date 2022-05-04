@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import "../CSS/Homepage.css";
 const Homepage = () => {
   return (

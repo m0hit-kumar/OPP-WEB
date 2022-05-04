@@ -1,5 +1,5 @@
 import React from "react";
-// import "../CSS/App.css";
+
 import { Route, Routes } from "react-router-dom";
 
 import LoginPage from "./LoginPage";
@@ -18,7 +18,7 @@ const App = () => {
           <Route exact path="/Dashboard" element={<Homepage />}></Route>
           <Route exact path="/Inbox" element={<Update />}></Route>
           <Route exact path="/Accounts" element={<Account />}></Route>
-          <Route exact path="/Schedule" element={<Homepage />}></Route>
+          <Route exact path="/Schedule" element={<Update />}></Route>
           <Route exact path="/Search" element={<Homepage />}></Route>
           <Route exact path="/Analytics" element={<Homepage />}></Route>
           <Route exact path="/Files" element={<Homepage />}></Route>
